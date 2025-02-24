@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 3 - Chapter 5 Demo</title>
+
+    <!-- TODO #1 (External CSS):
+    Link to your external 'style.css' file here.
+    For reference, see Chapter 5 about including CSS files.
+    -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- TODO #2 (Internal CSS):
+    Add an internal <style> block here with at least one rule.
+    For example, you might style the <body> or <footer>.
+    Refer to Chapter 5's section on using the <style> element.
+    -->
+    <style>
+        footer p {
+            /* This will override the external CSS for the footer */
+            background-color: red;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- TODO #3 (Inline CSS):
+    Add a style attribute to at least one element, e.g. this <h1>.
+    Example: <h1 style="color: blue; font-family: serif;">My Demo</h1>
+    Then explain in a comment which Chapter 5 property/properties are used
+    and how they might override the external or internal CSS if conflicts arise.
+
+    Inline styles have the highest specificity/control so this will 
+    override the external and internal styles.
+    -->
+    <h1 style="color: blue; font-family: sans-serif;">Welcome to My Chapter 5 Demo</h1>
+
+    <p><u>
+        This paragraph should demonstrate <strong>inheritance</strong>.
+        If you set a 'color' or 'font-family' on the body tag or a parent element,
+        it should automatically apply here, unless it's overridden.
+    </u></p>
+    <p><u>
+        Modify colors, fonts, text size, etc. in your external or internal CSS.
+        Observe how the CSS cascade and inheritance affect these paragraphs
+        vs. any inline-styled elements.
+    </u></p>
+
+    <!--
+    TODO #4 (Demonstrate Cascade):
+    For example, if your external CSS sets a color on <h1>,
+    and your internal CSS sets a different color, see which one wins.
+    Add a short comment explaining the result according to Chapter 5
+    on the CSS cascade.
+
+    This footer has both external and internal styles applied to it, 
+    but since the internal CSS style comes after the external style 
+    it will override it. However, if an inline style was applied to 
+    the footer then the inline style would override both the external 
+    and internal styles.
+    -->
+
+    <footer>
+        <p>&copy; 2025 My Demo Site</p>
+    </footer>
+</body>
+
+</html>
+
+<!--
+- Inline CSS has the highest priority which is the <h1> with the 
+color: blue;, this overrides the external h1 { color: purple; }.
+
+- Internal CSS has the middle priority which is the footer styles 
+in the <style> in the head and this overrides the external footer styles.
+
+- External CSS has the lowest priority which has all the styles in the 
+style.css file, these are the general styles for the tags unless overriden.
+
+- Inheritance takes place when the external styles as in this style sheet 
+get applied to tags in whatever section you applied them to and in my case 
+I applied them to the body section, so since <color> and <font-family> are 
+inheritable properties all text in <body> automatically inherits the <color>
+and <font-family> that is in this external style.css.
+-->

@@ -15,8 +15,8 @@ body {
     /* TODO: Choose a color or font family from Chapter 5 examples,
     explain in a comment why you picked it. */
     color: black; /* Easy readbility */
-    font-family: Arial, Helvetica, sans-serif; /* Common font that I usually use */
-    background-color: lightgray; /* Simple color which is appealling to the eye
+    font-family: 'Times New Roman', Times, serif; /* Common font that I usually use */
+    background-color: lightgray; /* Simple color which is appealling to the eye */
 }
 
 /* Example: style your <h1> externally here */
@@ -31,12 +31,13 @@ h1 {
     - Paragraphs (p)
     - Footer
     - etc.
-  */
+*/
 p {
     font-size: 18px;
 }
 
-footer {
+footer p {
+    font-size: 16px;
     background-color: cornsilk;
     text-align: left;
 }
@@ -60,6 +61,7 @@ For demonstration:
 
     - Inheritance takes place when the external styles as in this style sheet 
     get applied to tags in whatever section you applied them to and in my case 
-    I applied them to the body section, so the tags within the body automatically 
-    get the font-family and color applied unless overriden.
+    I applied them to the body section, so since <color> and <font-family> are 
+    inheritable properties all text in <body> automatically inherits the <color>
+    and <font-family> that is in this external style.css.
 */
