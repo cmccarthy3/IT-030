@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Gallery</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-48TPSBZY3C"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-48TPSBZY3C');
+    </script>
 </head>
 
 <body>
@@ -14,11 +24,11 @@
 
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="facts.html">Facts</a></li>
-            <li><a href="abilities.html">Abilities</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html" onclick="gtag('event', 'navigation_click', { 'event_category': 'Navigation', 'event_label': 'Home' });">Home</a></li>
+            <li><a href="gallery.html" onclick="gtag('event', 'navigation_click', { 'event_category': 'Navigation', 'event_label': 'Gallery' });">Gallery</a></li>
+            <li><a href="facts.html" onclick="gtag('event', 'navigation_click', { 'event_category': 'Navigation', 'event_label': 'Facts' });">Facts</a></li>
+            <li><a href="abilities.html" onclick="gtag('event', 'navigation_click', { 'event_category': 'Navigation', 'event_label': 'Abilities' });">Abilities</a></li>
+            <li><a href="contact.html" onclick="gtag('event', 'navigation_click', { 'event_category': 'Navigation', 'event_label': 'Contact' });">Contact</a></li>
         </ul>
     </nav>
 
