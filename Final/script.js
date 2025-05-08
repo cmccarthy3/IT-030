@@ -40,7 +40,7 @@ if (userTheme === 'dark') {
     document.body.style.backgroundColor = "#121212";
     document.body.style.color = "#f1f1f1";
 
-    const cards = document.querySelectorAll('.content-home, .content-facts, .sidebar-home, .sidebar-facts, .gallery-section article, .fun-facts, .abilities-section article, .contact-info, .affiliate a');
+    const cards = document.querySelectorAll('.content-home, .content-facts, .sidebar-home, .sidebar-facts, .gallery-section article, .abilities-section article, .contact-info, .affiliate a');
     cards.forEach(card => {
         card.style.backgroundColor = "#1e1e1e";
         card.style.color = "#f1f1f1";

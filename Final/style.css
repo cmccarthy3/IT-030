@@ -47,7 +47,7 @@ footer {
 }
 
 /* Home page */
-main {
+.home-page {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 2rem;
@@ -182,7 +182,7 @@ button {
 }
 
 @media (max-width: 1024px) {
-    main,
+    .home-page,
     .fun-facts,
     .abilities-section,
     .gallery-section {
@@ -209,7 +209,7 @@ button {
         gap: 1rem;
     }
 
-    main,
+    .home-page,
     .fun-facts,
     .abilities-section,
     .gallery-section {
@@ -223,8 +223,10 @@ button {
     }
 
     .content-home,
-    .content-facts {
-        padding-bottom: 0;
+    .content-facts,
+    .sidebar-home,
+    .sidebar-facts {
+        padding-bottom: 10px;
     }
 }
 
@@ -243,7 +245,7 @@ button {
         gap: 0.5rem;
     }
 
-    main,
+    .home-page,
     .fun-facts,
     .abilities-section,
     .gallery-section {
