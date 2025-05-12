@@ -18,22 +18,25 @@
 </head>
 
 <body>
+    <!-- Header section with welcome message -->
     <header>
         <h1>Animal Gallery</h1>
         <p id="welcome-message" style="margin-top: 0.5rem;"></p>
     </header>
 
+    <!-- Nav bar -->
     <nav>
         <ul>
-            <li><a href="index.html" onclick="gtag('event', 'navigation_click', { 'event_category': 'Navigation', 'event_label': 'Home' });">Home</a></li>
-            <li><a href="gallery.html" onclick="gtag('event', 'navigation_click', { 'event_category': 'Navigation', 'event_label': 'Gallery' });">Gallery</a></li>
-            <li><a href="facts.html" onclick="gtag('event', 'navigation_click', { 'event_category': 'Navigation', 'event_label': 'Facts' });">Facts</a></li>
-            <li><a href="abilities.html" onclick="gtag('event', 'navigation_click', { 'event_category': 'Navigation', 'event_label': 'Abilities' });">Abilities</a></li>
-            <li><a href="contact.html" onclick="gtag('event', 'navigation_click', { 'event_category': 'Navigation', 'event_label': 'Contact' });">Contact</a></li>
-            <li><a href="affiliate.html" onclick="gtag('event', 'navigation_click', { 'event_category': 'Navigation', 'event_label': 'Affiliate' });">Affiliate</a></li>
+            <li><a href="index.html" onclick="gtag('event', 'navigation_click', {event_category: 'Navigation', event_label: 'Home'});">Home</a></li>
+            <li><a href="gallery.html" onclick="gtag('event', 'navigation_click', {event_category: 'Navigation', event_label: 'Gallery'});">Gallery</a></li>
+            <li><a href="facts.html" onclick="gtag('event', 'navigation_click', {event_category: 'Navigation', event_label: 'Facts'});">Facts</a></li>
+            <li><a href="abilities.html" onclick="gtag('event', 'navigation_click', {event_category: 'Navigation', event_label: 'Abilities'});">Abilities</a></li>
+            <li><a href="contact.html" onclick="gtag('event', 'navigation_click', {event_category: 'Navigation', event_label: 'Contact'});">Contact</a></li>
+            <li><a href="affiliate.html" onclick="gtag('event', 'navigation_click', {event_category: 'Navigation', event_label: 'Affiliate'});">Affiliate</a></li>
         </ul>
     </nav>
 
+    <!-- Main content section of gallery of pictures -->
     <div class="gallery-section">
         <article>
             <img src="images/tiger.jpg" alt="Tiger Image">
@@ -56,6 +59,7 @@
         </article>
     </div>
 
+    <!-- Footer section -->
     <footer>
         <p>&copy; 2025 Amazing Animals</p>
     </footer>
